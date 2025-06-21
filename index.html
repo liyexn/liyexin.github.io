@@ -1,256 +1,369 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta content="IE=7.0000" http-equiv="X-UA-Compatible">
-<title>Yexin Li's Homepage</title>
-<meta name="description" content="Yexin Li, 李叶昕, Researcher at Beijing Institute for General Artificial Intelligence. Multi-agent system, reinforcement learning, spatio-temporal data mining.">
-<meta name="keywords" content="Yexin Li, 李叶昕, Researcher at Beijing Institute for General Artificial Intelligence. Multi-agent system, reinforcement learning, spatio-temporal data mining.">
+<html>
 
-<link rel="stylesheet" type="text/css" href="./files/liyexin.css">
-<!-- <script type="text/javascript" async="" src="./files/ga.js"></script><script type="text/javascript">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta content="IE=7.0000" http-equiv="X-UA-Compatible">
+  <title>Yexin Li's Homepage</title>
+  <meta name="description"
+    content="Researcher at Beijing Institute for General Artificial Intelligence. Multi-agent system, reinforcement learning, spatio-temporal data mining.">
+  <meta name="keywords"
+    content="Researcher at Beijing Institute for General Artificial Intelligence. Multi-agent system, reinforcement learning, spatio-temporal data mining.">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39532305-1']);
-  _gaq.push(['_trackPageview']);
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      box-sizing: border-box;
+    }
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    #page-container {
+      display: flex;
+      flex-grow: 1;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      box-sizing: border-box;
+      padding: 20px;
+    }
 
-</script> -->
+    .linklist {
+      width: 180px;
+      background-color: #fff;
+      padding: 15px 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
+      font-size: 20px;
+      margin-right: 20px;
+      flex-shrink: 0;
+      height: auto;
+      position: sticky;
+      top: 20px;
+    }
 
-<style>@-moz-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@-webkit-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@-o-keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}@keyframes nodeInserted{from{opacity:0.99;}to{opacity:1;}}embed,object{animation-duration:.001s;-ms-animation-duration:.001s;-moz-animation-duration:.001s;-webkit-animation-duration:.001s;-o-animation-duration:.001s;animation-name:nodeInserted;-ms-animation-name:nodeInserted;-moz-animation-name:nodeInserted;-webkit-animation-name:nodeInserted;-o-animation-name:nodeInserted;}
-</style></head>
+    .linklist h3 {
+      margin-top: 0;
+      font-size: 22px;
+      color: #333;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    .linklist ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .linklist ul li {
+      margin-bottom: 8px;
+    }
+
+    .linklist ul li a {
+      text-decoration: none;
+      color: #0645ad;
+      transition: color 0.2s;
+    }
+
+    .linklist ul li a:hover {
+      text-decoration: underline;
+      color: #0b2e8a;
+    }
+
+    #content {
+      flex: 1;
+      height: 100%;
+      overflow-y: auto;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    table {
+      border-spacing: 10px 6px;
+      width: 100%;
+    }
+
+    td.left {
+      width: 40px;
+      vertical-align: top;
+    }
+
+    .title {
+      font-weight: bold;
+      color: #222;
+    }
+
+    #left table img {
+      border-radius: 8px;
+      margin-right: 15px;
+      display: block;
+    }
+
+    p {
+      margin: 6px 0;
+    }
+
+    .box {
+      background-color: #fefefe;
+      border: 1px solid #ddd;
+      padding: 12px 15px;
+      margin-top: 15px;
+      border-radius: 6px;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    #news h2,
+    #papers h2,
+    #experiences h2,
+    #education h2 {
+      border-bottom: 2px solid #0645ad;
+      padding-bottom: 6px;
+      color: #0645ad;
+      margin-bottom: 10px;
+    }
+
+    font[color="red"] {
+      font-weight: bold;
+      color: #d33 !important;
+    }
+  </style>
+</head>
+
 <body>
-<div id="content">
+  <div id="page-container">
 
-<div id="news">
-<h2>News</h2><br>
-<font size="3px">
+    <div class="linklist">
+      <h3>Homepage</h3>
+      <ul>
+        <li><a href="#news">News</a></li>
+        <li><a href="#papers">Publications</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+    </div>
 
-</div>
+    <div id="content">
+      <div id="left">
+        <table style="background-color:white; border-spacing: 10px 0;">
+          <tr>
+            <td style="vertical-align: middle; padding-right: 10px;">
+              <img src="./files/profile.png" height="250" style="border-radius: 8px;">
+            </td>
+            <td style="vertical-align: middle;">
+              <div style="font-size: 20px; line-height: 1.6;">
+                <b style="font-size: 30px;">Yexin Li</b><br>
+                <b>Researcher</b><br>
+                Beijing Institute for General Artificial Intelligence<br>
+                Email: <a href="mailto:liyexin@bigai.ai">liyexin@bigai.ai</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:yliby@connect.ust.hk">yliby@connect.ust.hk</a>
+              </div>
+            </td>
+          </tr>
+        </table>
 
-<div id="left">
-<table style="background-color:white;">
-<tbody><tr nosave="">
-<td valign="CENTER">
-<img src="./files/profile.png" height="250" align="left">
-</td>
+        <div class="box">
+          I am a researcher at the Multi-Agent Systems Lab, Beijing Institute for General Artificial Intelligence. My research interests include multi-agent systems, reinforcement learning, large language models, and spatio-temporal data mining. I received my Ph.D. in Computer Science and Engineering from the Hong Kong University of Science and Technology, under the supervision of Prof. Qiang Yang and Dr. Yu Zheng. My work has been published in top-tier conferences such as ICML, ICLR, ACL, and KDD, as well as leading journals including TKDE.
+          <br><br>
+          <font color="red">
+            Hiring PhD students jointly supervised with 上海交通大学 北京理工大学 上海科技大学 <br>
+            - Multi-agent systems & Large language models & Data mining <br>
+            - Strong code ability<br>
+            - Determination to do high-quality research <br><br>
+          </font>
+        </div>
+      </div>
 
-<td valign="CENTER" width="2%">
-</td>
+      <div id="news">
+        <h2>News</h2>
+        <font size="3px">
+          <b>1 May 2025.</b>
+          One paper "Are the Values of LLMs Structurally Aligned with Humans? A Causal Perspective" has been accepted by ACL 2025.<br><br>
+          <b>1 May 2025.</b>
+          One paper "Learning to Select In-Context Demonstration Preferred by Large Language Model" has been accepted by ACL 2025.<br><br>
+        </font>
+      </div>
 
-<td valign="CENTER" halign="LEFT">
-<font size="+0">
-<b><font size="+2">Yexin Li&nbsp;</font></b>
+      <div id="papers">
+        <h2>Selected Publications
+        [<a href="https://scholar.google.com/citations?user=8Sof7boAAAAJ&hl=en">Google Scholar</a>]</h2>
 
-</p><p style="margin-left:0px;">
-<b>Researcher</b>
-</p><p style="margin-left:0px;">
+        <table>
+          <tbody>
+            <tr>
+              <td class="left"><a href="https://arxiv.org/pdf/2505.19966" target="_blank"><img src="./files/pdf.gif"><br></a></td>
+              <td><span class="title">Learning to Select In-Context Demonstration Preferred by Large Language Model. <font color="red"> ACL Findings <b>2025</b> </font> </span>
+                <br>Z. Zhang, S. Lan, L. Song, J. Bian, <b>Y. Li</b>, K. Ren<br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-</p><p style="margin-left:0px;">
-Beijing Institute for General Artificial Intelligence<br>
-</p><p style="margin-left:0px;">
-Email:  liyexin@bigai.ai</a><br>
-</p></font><p><font size="+0">
-</font>
-</p></td>
-</tr>
-</tbody></table>
+        <table>
+          <tbody>
+            <tr>
+              <td class="left"><a href="https://arxiv.org/pdf/2501.00581" target="_blank"><img src="./files/pdf.gif"><br></a></td>
+              <td><span class="title">Are the Values of LLMs Structurally Aligned with Humans? A Causal Perspective. <font color="red"> ACL Findings <b>2025</b> </font> </span>
+                <br>Y. Kang, J. Wang, <b>Y. Li</b>, M. Wang, W. Tu et al.<br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-<div class="box">
-My research interests span Multi-agent system, reinforcement learning, and spatio-temporal data mining. I have over 10 publications appeared in several top conferences such as ICML, ICLR, and KDD, and journals including TKDE. </br></br>
+        <table>
+          <tbody>
+            <tr>
+              <td class="left"><a href="https://arxiv.org/pdf/2407.00567" target="_blank"><img src="./files/pdf.gif"><br></a></td>
+              <td><span class="title">A Contextual Combinatorial Bandit Approach to Negotiation. <font color="red"> ICML <b>2024</b> </font> </span>
+                <br><b>Y. Li</b>, Z. Mu, S. Qi<br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-<font color="red">
-Advertisements: </br>
+        <table>
+          <tbody>
+            <tr>
+              <td class="left"><a href="https://arxiv.org/pdf/2401.10568" target="_blank"><img src="./files/pdf.gif"><br></a></td>
+              <td><span class="title">CivRealm: A Learning and Reasoning Odyssey in Civilization for Decision-Making Agents. <font color="red"> ICLR <b>2024</b> </font> </span>
+                <br>S. Qi, S. Chen, <b>Y. Li</b>, X. Kong, J. Wang, B. Yang et al.<br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-Hiring PhD students. Requirements: </br>
-- Strong code ability</br>
-- English: CET-6 score 500+ or equal levels</br>
-- Determination to do high-quality research. </br></br>
+        <table>
+          <tbody>
+          <tr>
+            <td class="left"><a href=" " target="_blank"><img src="./files/pdf.gif"><br></a></td>
+            <td><span class="title">A Macro–Micro Spatio-temporal Neural Network for Traffic Prediction. <font color="red"> Transportation Research Part C: Emerging Technologies <b>2023</b> </font></span>
+              <br>S. Feng, S. Wei, J. Zhang, <b>Y. Li</b>, J. Ke, G. Chen, Y. Zheng, H. Yang<br>
+          </td>
+          </tr>
+         </tbody>
+        </table>
 
-</font>
-</div>
+        <table>
+          <tbody>
+          <tr>
+            <td class="left"><a href=" " target="_blank"><img src="./files/pdf.gif"><br></a></td>
+            <td><span class="title">Crowd-Sensing Enhanced Parking Patrol Using Sharing Bikes’ Trajectories. <font color="red"> TKDE <b>2021</b> </font> </span>
+              <br>T. He, J. Bao, <b>Y. Li</b>, H. He, Y. Zheng<br>
+          </td>
+          </tr>
+         </tbody>
+        </table>
 
-<div id="papers">
-<h2>Selected Publications</h2> [<A href="https://scholar.google.com/citations?user=8Sof7boAAAAJ&hl=en">Google Scholar<A>]
-</br>
+        <table>
+          <tbody>
+          <tr>
+            <td class="left"><a href=" " target="_blank"><img src="./files/pdf.gif"><br></a></td>
+            <td><span class="title">Cooperative Multi-Agent Reinforcement Learning in Express System. <font color="red"> CIKM <b>2020</b> </font> </span>
+              <br><b>Y. Li</b>, Y. Zheng, Q. Yang<br>
+          </td>
+          </tr>
+         </tbody>
+        </table>
 
-<b> In the Year of 2024: </b> </br></br>
+        <table>
+          <tbody>
+          <tr>
+            <td class="left"><a href=" " target="_blank"><img src="./files/pdf.gif"><br></a></td>
+            <td><span class="title">Autost: Efficient Neural Architecture Search for Spatio-temporal Prediction. <font color="red"> SIGKDD <b>2020</b> </font> </span>
+              <br>T. Li, J. Zhang, K. Bao, Y. Liang, <b>Y. Li</b>, Y. Zheng<br>
+          </td>
+          </tr>
+         </tbody>
+        </table>
 
-<table>
-  <tbody>
-  <tr>
-    <td class="left"><a href="https://arxiv.org/pdf/2407.00567" target="_blank"><img src="./files/pdf.gif"><br></a></td>
-    <td><span class="title">A Contextual Combinatorial Bandit Approach to Negotiation</span>
-      <br><b>Y. Li</b>, Z. Mu, S. Qi<br>
-      ICML 2024
-  </td>
-  </tr>
- </tbody>
-</table>
+        <table>
+          <tbody>
+          <tr>
+            <td class="left"><a href=" " target="_blank"><img src="./files/pdf.gif"><br></a></td>
+            <td><span class="title">Efficient and Effective Express via Contextual Cooperative Reinforcement Learning. <font color="red"> SIGKDD <b>2019</b> </font> </span>
+              <br><b>Y. Li</b>, Y. Zheng, Q. Yang<br>
+          </td>
+          </tr>
+         </tbody>
+        </table>
 
-<table>
-  <tbody>
-  <tr>
-    <td class="left"><a href="https://arxiv.org/pdf/2401.10568" target="_blank"><img src="./files/pdf.gif"><br></a></td>
-    <td><span class="title">CivRealm: A Learning and Reasoning Odyssey in Civilization for Decision-Making Agents</span>
-      <br>S. Qi, S. Chen, <b>Y. Li</b>, X. Kong, J. Wang, B. Yang et al.<br>
-      ICLR 2024
-  </td>
-  </tr>
- </tbody>
-</table>
+        <table>
+          <tbody>
+          <tr>
+            <td class="left"><a href=" " target="_blank"><img src="./files/pdf.gif"><br></a></td>
+            <td><span class="title">Citywide Bike Usage Prediction in a Bike-Sharing System. <font color="red"> TKDE <b>2019</b> </font> </span>
+              <br><b>Y. Li</b>, Y. Zheng<br>
+          </td>
+          </tr>
+         </tbody>
+        </table>
 
+        <table>
+          <tbody>
+          <tr>
+            <td class="left"><a href=" " target="_blank"><img src="./files/pdf.gif"><br></a></td>
+            <td><span class="title">Dynamic Bike Reposition: A Spatio-Temporal Reinforcement Learning Approach. <font color="red"> SIGKDD <b>2018</b> </font> </span>
+              <br><b>Y. Li</b>, Y. Zheng<br>
+          </td>
+          </tr>
+         </tbody>
+        </table>
 
+        <table>
+          <tbody>
+          <tr>
+            <td class="left"><a href=" " target="_blank"><img src="./files/pdf.gif"><br></a></td>
+            <td><span class="title">Traffic Prediction in a Bike-Sharing System. <font color="red"> SIGSPATIAL <b>2015</b> </font> </span>
+              <br><b>Y. Li</b>, Y. Zheng, H. Zhang, L. Chen<br>
+          </td>
+          </tr>
+         </tbody>
+        </table>
 
+      </div>
 
-<b> Before the Year of 2023: </b> </br></br>
+      <div id="experiences">
+        <h2>Experiences</h2>
+      </div>
+      <table>
+        <tr>
+          <td><span class="title">Beijing Institute for General Artificial Intelligence</span><br>
+            Researcher &nbsp;&nbsp;&nbsp;&nbsp; Apr. 2023 - Present</td>
+        </tr>
+        <tr>
+          <td><span class="title">JD.com</span><br>
+            Doctoral Management Trainee &nbsp;&nbsp;&nbsp;&nbsp; Jan. 2021 - Mar. 2023</td>
+        </tr>
+        <tr>
+          <td><span class="title">Microsoft Research Asia</span><br>
+            Research Intern &nbsp;&nbsp;&nbsp;&nbsp; Jan. 2015 - Aug. 2016</td>
+        </tr>
+      </table>
 
-<table>
-  <tbody>
-  <tr>
-    <td class="left"><a href=" " target="_blank"><img src=" "><br></a></td>
-    <td><span class="title">A Macro–Micro Spatio-temporal Neural Network for Traffic Prediction</span>
-      <br>S. Feng, S. Wei, J. Zhang, <b>Y. Li</b>, J. Ke, G. Chen, Y. Zheng, H. Yangg<br>
-      Transportation Research Part C: Emerging Technologies 2023
-  </td>
-  </tr>
- </tbody>
-</table>
+      <div id="education">
+        <h2>Education</h2>
+      </div>
+      <table>
+        <tr>
+          <td><span class="title">The Hong Kong University of Science and Technology</span><br>
+            Ph.D. in Computer Science &nbsp;&nbsp;&nbsp;&nbsp; Sep. 2016 - Nov. 2020, Hong Kong</td>
+        </tr>
+        <tr>
+          <td><span class="title">The Hong Kong University of Science and Technology</span><br>
+            MPhil in Computer Science &nbsp;&nbsp;&nbsp;&nbsp; Sep. 2013 - Aug. 2015, Hong Kong</td>
+        </tr>
+        <tr>
+          <td><span class="title">Xi'an Jiaotong University</span><br>
+            Bachelor in Mathematics and Applied Mathematics &nbsp;&nbsp;&nbsp;&nbsp; Sep. 2009 - Jun. 2013, Xi'an</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
 
-<table>
-  <tbody>
-  <tr>
-    <td class="left"><a href=" " target="_blank"><img src=" "><br></a></td>
-    <td><span class="title">Crowd-Sensing Enhanced Parking Patrol Using Sharing Bikes’ Trajectories</span>
-      <br>T. He, J. Bao, <b>Y. Li</b>, H. He, Y. Zheng<br>
-      TKDE 2021
-  </td>
-  </tr>
- </tbody>
-</table>
-
-<table>
-  <tbody>
-  <tr>
-    <td class="left"><a href=" " target="_blank"><img src=" "><br></a></td>
-    <td><span class="title">Cooperative Multi-Agent Reinforcement Learning in Express System</span>
-      <br><b>Y. Li</b>, Y. Zheng, Q. Yang<br>
-      CIKM 2020
-  </td>
-  </tr>
- </tbody>
-</table>
-
-<table>
-  <tbody>
-  <tr>
-    <td class="left"><a href=" " target="_blank"><img src=" "><br></a></td>
-    <td><span class="title">Autost: Efficient Neural Architecture Search for Spatio-temporal Prediction</span>
-      <br>T. Li, J. Zhang, K. Bao, Y. Liang, <b>Y. Li</b>, Y. Zheng<br>
-      SIGKDD 2020
-  </td>
-  </tr>
- </tbody>
-</table>
-
-<table>
-  <tbody>
-  <tr>
-    <td class="left"><a href=" " target="_blank"><img src=" "><br></a></td>
-    <td><span class="title">Efficient and Effective Express via Contextual Cooperative Reinforcement Learning</span>
-      <br><b>Y. Li</b>, Y. Zheng, Q. Yang<br>
-      SIGKDD 2019
-  </td>
-  </tr>
- </tbody>
-</table>
-
-<table>
-  <tbody>
-  <tr>
-    <td class="left"><a href=" " target="_blank"><img src=" "><br></a></td>
-    <td><span class="title">Citywide Bike Usage Prediction in a Bike-Sharing System</span>
-      <br><b>Y. Li</b>, Y. Zheng<br>
-      TKDE 2019
-  </td>
-  </tr>
- </tbody>
-</table>
-
-<table>
-  <tbody>
-  <tr>
-    <td class="left"><a href=" " target="_blank"><img src=" "><br></a></td>
-    <td><span class="title">Dynamic Bike Reposition: A Spatio-Temporal Reinforcement Learning Approach</span>
-      <br><b>Y. Li</b>, Y. Zheng<br>
-      SIGKDD 2018
-  </td>
-  </tr>
- </tbody>
-</table>
-
-<table>
-  <tbody>
-  <tr>
-    <td class="left"><a href=" " target="_blank"><img src=" "><br></a></td>
-    <td><span class="title">Traffic Prediction in a Bike-Sharing System</span>
-      <br><b>Y. Li</b>, Y. Zheng, H. Zhang, L. Chen<br>
-      SIGSPATIAL 2015
-  </td>
-  </tr>
- </tbody>
-</table>
-
-
-
-<h2 style="CLEAR: both;">Experiences</h2>
-<table>
-  <tbody>
-  <tr>
-    <td><span class="title">Beijing Institute for General Artificial Intelligence</span> <br>
-  Researcher &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Apr. 2023 - Present <br>
-     </td></tr></tbody></table>
-<table>
-  <tbody>
-  <tr>
-    <td><span class="title">JD.com</span> <br>
-  Doctoral management trainee &nbsp;&nbsp;&nbsp;&nbsp;  Jan. 2021 - Mar. 2023<br>
-     </td></tr></tbody></table>
-<table>
-  <tbody>
-  <tr>
-    <td><span class="title">Microsoft Research Asia</span> <br>
-  Research Intern &nbsp;&nbsp;&nbsp;&nbsp;  Jan. 2015 - Aug. 2016<br>
-     </td></tr></tbody></table>
-
-
-
-<h2 style="CLEAR: both;">Education</h2>
-<table>
-  <tbody>
-  <tr>
-    <td><span class="title">The Hong Kong University of Science and Technology</span> <br>
-  Ph.D. in Computer Science &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Sep. 2016 - Nov. 2020, Hong Kong <br>
-     </td></tr></tbody></table>
-<table>
-  <tbody>
-  <tr>
-    <td><span class="title">The Hong Kong University of Science and Technology</span> <br>
-  MPhil in Computer Science &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Sep. 2013 - Aug. 2015, Hong Kong <br>
-     </td></tr></tbody></table>
-<table>
-  <tbody>
-  <tr>
-    <td><span class="title">Xi'an Jiaotong University</span> <br>
-  Bachelor in Mathematics and Applied Mathematics &nbsp;&nbsp;&nbsp;&nbsp;  Sep. 2009 - Jun. 2013, Xi'an <br>
-     </td></tr></tbody></table>
-
-
-</div>
-</div>
-
-
-</body></html>
-
+</html>
